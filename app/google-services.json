@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1033749326558",
+    "firebase_url": "https://cuijan-fe908.firebaseio.com",
+    "project_id": "cuijan-fe908",
+    "storage_bucket": "cuijan-fe908.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033749326558:android:0d94361b68d3b9b7b0f04f",
+        "android_client_info": {
+          "package_name": "com.harsharjeria.cuijan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1033749326558-tj1lfutkq6eo77lhoucdtcnrqrsbqgnr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.harsharjeria.cuijan",
+            "certificate_hash": "9ae15ffad0e4c6eb2d8e25184b931e255036f4d8"
+          }
+        },
+        {
+          "client_id": "1033749326558-lnmmof7ejh7gf3lpo7vjf1t0b1t27a33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmGxONaZhakuimP6IRRbsAFyU0vKoloi8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1033749326558-lnmmof7ejh7gf3lpo7vjf1t0b1t27a33.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

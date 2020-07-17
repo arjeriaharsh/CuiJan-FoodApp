@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <color name="colorTextOne">#fff</color>
+
+    <color name="colorGradientOne">#959595</color>
+    <color name="colorGradientTwo">#D6D6D6</color>
+
+
+    <color name="colorLogoColor">#ff7e00</color>
+    <color name="colorLogoColorLighter">#FFC791</color>
+
+</resources>

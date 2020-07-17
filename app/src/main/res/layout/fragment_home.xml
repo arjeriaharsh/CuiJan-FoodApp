@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorAccent"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/home_food_image"
+        android:scaleType="centerCrop"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#96C3C3C3"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/textWelcomeName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="cursive"
+                android:lines="2"
+                android:text="Welcome! \n"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toTopOf="@+id/textHotDeals"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textHotDeals"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:lines="1"
+                android:text="Hot Restaurants!"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@+id/recyclerviewTop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textWelcomeName" />
+
+            <TextView
+                android:id="@+id/textHotDeals2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:lines="1"
+                android:text="Browse by Cuisine"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@+id/recyclerviewWebsites"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerviewTop" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewTop"
+                android:layout_width="0dp"
+                android:layout_height="220dp"
+
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/textHotDeals2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textHotDeals"/>
+
+            <include
+                android:id="@+id/include1"
+                layout="@layout/item_hot_topics_shimmring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/textHotDeals2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textHotDeals" />
+
+            <include
+                android:id="@+id/include2"
+                layout="@layout/item_hot_topics_shimmring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/textHotDeals2"
+                app:layout_constraintStart_toEndOf="@+id/include3"
+                app:layout_constraintTop_toBottomOf="@+id/textHotDeals" />
+
+            <include
+                android:id="@+id/include3"
+                layout="@layout/item_hot_topics_shimmring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/textHotDeals2"
+                app:layout_constraintStart_toEndOf="@+id/include1"
+                app:layout_constraintTop_toBottomOf="@+id/textHotDeals" />
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewWebsites"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/textBrowseClassDeals3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textHotDeals2">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/textBrowseClassDeals3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:lines="1"
+                android:text="Browse by Type"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@+id/recyclerviewClasses"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerviewWebsites" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewClasses"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textBrowseClassDeals3" />
+
+            <TextView
+                android:id="@+id/imageView3"
+                android:layout_width="114dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/textWelcomeName"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/edit_text_background"
+                android:text=""
+                android:gravity="center"
+                android:textSize="20sp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

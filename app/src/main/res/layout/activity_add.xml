@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".AddActivity"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Name*"
+            android:layout_margin="4dp"
+            android:id="@+id/addCourseName"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Subject"
+            android:layout_margin="4dp"
+            android:id="@+id/addCourseSubject"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Description*"
+            android:lines="4"
+            android:maxLines="10"
+            android:gravity="top"
+            android:layout_margin="4dp"
+            android:id="@+id/addDescription"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Price (in INR)"
+            android:layout_margin="4dp"
+            android:id="@+id/addPrice"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Link"
+            android:layout_margin="4dp"
+            android:lines="1"
+            android:gravity="top"
+            android:maxLines="1"
+            android:id="@+id/addLink"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="4dp"
+            android:id="@+id/websiteType"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:textColor="#FF9E9E"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/addServiceButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Add Service"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+
+</ScrollView>
